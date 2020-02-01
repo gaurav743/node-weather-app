@@ -1,7 +1,6 @@
 //Import core packages
 const path = require("path")
 
-
 //Import npm packages.
 const express = require("express")
 const hbs = require("hbs")
