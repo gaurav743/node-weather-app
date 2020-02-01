@@ -1,0 +1,57 @@
+body{
+    color: #333333;
+    font-family: arial;
+    max-width: 650px; /* Maximum width body can take up. */
+    margin: 0 auto; /* 0-top, bottom  auto-left, right  auto centers the body  margin is between adjacent divs*/
+    padding: 0 16px; /* Padding is between content of the div and div itself. */
+
+    /* Flexbox settings */
+    display: flex;
+    flex-direction: column; /*Otherwise footer sticks at the top */ 
+    min-height: 100vh; /*Sets div height to viewport height(vh). This ensures div takes up most of the empty space vertically */
+
+}
+
+.main-content{
+    flex-grow: 1; /*Take up all empty space */
+}
+
+.portrait {
+    max-width: 250px;
+}
+
+footer{
+    color: #888888;
+    border-top: solid 1px #eeeeee;
+    margin-top: 16px;
+    padding: 16px 0; /* padding top, bottom - 16px padding left, right - 0 */
+}
+
+header {
+    margin-top: 16px;
+    margin-bottom: 64px;
+}
+
+h1{
+    font-size: 64px;
+    margin-bottom: 16px;
+}
+
+header a {
+    color: #888888;
+    margin-right: 16px;
+    text-decoration: none;
+}
+
+input{
+    border: 1px solid #cccccc;
+    padding: 8px;
+}
+
+button {
+    border: 1px solid #888888;
+    padding: 8px;
+    background: #888888;
+    color: white;
+    cursor: pointer;
+}
