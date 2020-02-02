@@ -18,7 +18,8 @@ weatherForm.addEventListener('submit', (e) => {
                 error.textContent = data.error
             } else {
                 error.textContent = locationVal
-                forecast.textContent = "The weather is " + data.forecast.summary
+                forecast.textContent = "The weather is " + data.forecast.summary + " and the temperature is expected to be " 
+                    + data.forecast.temperature + ". There are chances of " + data.forecast.precipType + "." 
             }
         })
     })
