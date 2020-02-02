@@ -11,6 +11,8 @@ const getForecast = require('../src/utils/getForecastDetails')
 
 const app = express() //express is a function and not an object.
 
+const port = process.env.PORT || 3000
+
 // console.log(__dirname) //Gives current directory path.
 // console.log(__filename) //Gives current file path.
 
@@ -143,6 +145,6 @@ app.get('*', (req,res) => {
 
 
 //Sets up, intializes and runs node server on port 3000
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log("Port 3000 is up and running.")
 })
